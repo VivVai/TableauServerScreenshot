@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tableau Dashboard Image Downloader</title>
+</head>
+<body>
+    <h1>Download Tableau Dashboard Image</h1>
+
+    {% if error %}
+        <p style="color:red;">Error: {{ error }}</p>
+    {% endif %}
+
+    <form method="post">
+        <h3>🔐 Tableau Credentials</h3>
+        <label>Tableau Server URL:</label><br>
+        <input type="text" name="server" value="{{ defaults['server'] }}" required><br><br>
+
+        <label>Site ID (contentUrl):</label><br>
+        <input type="text" name="site" value="{{ defaults['site'] }}" required><br><br>
+
+        <label>Token Name:</label><br>
+        <input type="text" name="token_name" value="{{ defaults['token_name'] }}" required><br><br>
+
+        <label>Token Secret:</label><br>
+        <input type="password" name="token_secret" value="{{ defaults['token_secret'] }}" required><br><br>
+
+        <h3>📁 Dashboard & Filter Info</h3>
+        <label>Workbook Name:</label><br>
+        <input type="text" name="workbook_name" value="{{ defaults['workbook_name'] }}" required><br><br>
+
+        <label>Dashboard/View Name:</label><br>
+        <input type="text" name="dashboard_name" value="{{ defaults['dashboard_name'] }}" required><br><br>
+
+        <label>Filter Field:</label><br>
+        <input type="text" name="filter_field" value="{{ defaults['filter_field'] }}" required><br><br>
+
+        <label>Filter Value:</label><br>
+        <input type="text" name="filter_value" value="{{ defaults['filter_value'] }}" required><br><br>
+
+        <button type="submit">Download Image</button>
+    </form>
+</body>
+</html>
