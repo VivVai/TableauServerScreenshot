@@ -85,7 +85,7 @@ def index():
         'server': 'https://us-east-1.online.tableau.com',
         'site': 'casepracticeproduct',
         'token_name': 'Vivek',
-        'token_secret': 'aTD+zWCXToyzCspuicCnDw==:X61tjKNMtLF6sHWJ3lOQbsD0WaiPG40B',
+        'token_secret': 'ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss',
         'workbook_name': 'Chart Types - Radial Chart ',
         'dashboard_name': 'Radial Charts for skill assessment',
         'filter_field': 'Name',
